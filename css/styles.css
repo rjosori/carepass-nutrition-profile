@@ -16,6 +16,7 @@
 }
 
 #table-toolbar p#powered-by{
+	font-family:'Foco W01 Bold', 'Myriad Pro', 'Myriad', sans-serif;
 	text-transform:uppercase;
 	font-weight:bold;
 	color:#000000;
@@ -24,6 +25,7 @@
 }
 
 #table-toolbar a#change-btn{
+	font-family:'Foco W01 Bold', 'Myriad Pro', 'Myriad', sans-serif;
 	color:#00ac9b;
 	font-weight:bold;
 	background:url('../img/triangle-arrow.gif') 50px 4px no-repeat;
@@ -32,6 +34,7 @@
 }
 
 .profile-table thead tr th{
+	font-family:'Foco W01 Bold', 'Myriad Pro', 'Myriad', sans-serif;
 	text-transform:uppercase;
 	background-color:#000000;
 	color:#FFFFFF;
@@ -42,6 +45,11 @@
 
 .profile-table tr>:first-child {
 	padding-left:35px;
+}
+
+.profile-table tr.active > td{
+	font-weight:bold;
+	color:#333333;
 }
 
 .profile-table td{
