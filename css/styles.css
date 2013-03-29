@@ -1,0 +1,51 @@
+*, html, body, div, table, p, a{
+	font-family:'Foco W01 Regular', 'Myriad Pro', 'Myriad', sans-serif;
+}
+
+#table-toolbar{
+	margin-top:90px;
+	margin-bottom:20px;
+}
+
+#table-toolbar #add-btn a{
+	color:#00ac9b;
+	text-transform:uppercase;
+	font-weight:bold;
+	background:url('../img/plus-sign.gif') 35px 1px no-repeat;
+	padding-left:48px;
+}
+
+#table-toolbar p#powered-by{
+	text-transform:uppercase;
+	font-weight:bold;
+	color:#000000;
+	text-align:right;
+	margin-bottom:0; padding-bottom:0;
+}
+
+#table-toolbar a#change-btn{
+	color:#00ac9b;
+	font-weight:bold;
+	background:url('../img/traingle-arrow.gif') 35px 1px no-repeat;
+}
+
+.profile-table thead tr th{
+	text-transform:uppercase;
+	background-color:#000000;
+	color:#FFFFFF;
+	font-size:13px;
+	padding-top:2px;
+	padding-bottom:0px;
+}
+
+.profile-table tr>:first-child {
+	padding-left:35px;
+}
+
+.profile-table td{
+	border-top:none;
+	font-size:16px;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+

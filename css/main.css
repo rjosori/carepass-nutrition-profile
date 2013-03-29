@@ -1,0 +1,1278 @@
+/*
+Main CSS
+*/
+
+/*******
+ Globals
+ *******/
+
+body {
+	font-family: 'Foco W01 Regular', arial, sans-serif;
+	padding-top: 0px;
+	padding-bottom: 60px;
+	color: #666;
+}
+
+.clear {
+	clear: both;
+	height: 0px;
+	width: 0px;
+}
+
+h1 {
+	font-size: 38px;
+	color: #00ad9b;
+	font-weight: normal;
+	font-family: 'Foco W01 Light', sans-serif;
+}	
+
+h2 {
+	font-size: 25px;
+	color: #515151;
+	line-height: 32px;
+	font-weight: normal;
+	font-family: 'Foco W01 Regular', sans-serif;
+}
+
+.question h2 {
+	padding: 0 70px 0 70px;
+	text-align: center;
+}
+
+/*******
+ Structure
+ *******/
+ 
+.container {
+	position: relative;
+	margin: 0px auto;
+	max-width: 1000px;
+	/*min-width: 724px;*/
+	width: 1000px;
+}
+ 
+header, #stage {
+	position: relative;
+	width: 100%;
+	clear: both;
+}
+
+header {
+	background: #e6e7e8;
+	border: 2px solid #a7a9ac;
+} 
+
+#subHeader {
+	position: relative;
+	clear: both;
+	margin-top: 15px;
+}
+
+#stage {
+	margin-top: 15px;
+	background: #fff;
+	padding: 0px;
+}
+
+
+.actionBar {
+	margin-top: 15px;
+}
+
+.actionBarBorder {
+	border-top: 1px solid #b2b2b2;
+	padding-top: 50px;
+
+}
+
+.actionBarNoBorder {
+	border-top: none;
+	padding-top: 50px;
+
+}
+
+.leftCol {
+	float: left;
+	width: 45%;
+	margin-right: 5%;
+}
+
+.rightCol {
+	float: left;
+	width: 45%;
+}
+
+.actionLeft {
+	text-align: left;
+}
+
+.actionRight {
+	text-align: right;
+}
+
+
+.stageRow {
+	/*border-top: 1px solid #cccccc;*/
+	/*padding-top: 30px;*/
+}
+
+.titleRow {
+	padding-bottom: 30px;
+}
+
+.titleRow .subhead {
+	font-size: 26px;
+	font-family: 'Foco W01 Light Italic', arial, sans-serif;
+	color: #9f9f9f;
+}
+ 
+.upDownOptions {
+	text-align: center;
+}
+
+.popover .btn {
+	position: relative;
+	float: right;
+	color: #9f9f9f;
+	font-size: 11px;
+}
+
+.popover {
+	color: #9f9f9f;
+}	
+
+/*******
+ Style 
+ *******/
+
+.grayRow {
+	background: #f9f9f9;
+}
+ 
+.question {
+	padding-bottom: 30px;
+}
+
+label {
+	font-size: 30px;
+	line-height: 30px;
+	clear: both;
+	color:#828282;
+	padding:0 0 20px 0;
+}
+
+fieldset{
+	padding:0 0 20px 0;
+}
+
+input[type=text]{
+	width: 165px;
+   	height: 47px;
+   	padding:5;
+   	font-size: 30px;
+   	line-height:30px;
+   	-moz-border-radius: 0px;
+	border-radius: 0px;
+	font-weight:normal;
+	color:#828282;
+	border: 1px solid #ccc;
+}
+
+.dropdown select{
+	background: transparent;
+   	width: 190px;
+   	padding: 5px;
+   	font-size: 30px;
+   	line-height: 1;
+   	border: 0;
+   	border-radius: 0;
+   	height: 55px;
+   	-webkit-appearance: none;
+   	font-weight:normal;
+	color:#828282;
+}
+
+.dropdown{
+	width: 165px;
+   	height: 50px;
+    overflow: hidden;
+    background: url(../img/dropdown.png) no-repeat right #fffdfd;
+    border: 1px solid #ccc;
+    margin:0 10px 5px 0;
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+}
+
+.dropdown.error{
+	border: 1px solid #f04e42;
+}
+
+.dropdown.small select{
+	width:100px;
+	height:55px;
+}
+
+.dropdown.small{
+	width:75px;
+	height:55px;
+}
+.errorMsg{
+	background: transparent url(../img/icon_warning.png) no-repeat left;
+	font-size: 14px;
+	font-weight:normal;
+	color:#ef4135;
+	padding:0 0 0 15px;
+}
+
+/*******
+ Icons 
+ *******/
+
+
+/*******
+ Section Specific Styles
+ *******/
+ 
+/* Primary Nav */
+
+#nav a {
+	color: #888;
+	font-weight: bold;
+	text-transform: uppercase;
+	
+}
+
+#nav a:hover {
+
+}
+
+#nav li {
+	list-style-type: none;
+	float: left;
+	margin-left: 40px;
+}
+ 
+/* Next */
+
+/*******
+ Final Design
+ *******/
+ 
+.upDown {
+	display: inline-block;
+	width: 59px;
+	height: 29px;
+	text-indent: -9999px;
+	background: transparent url(../img/upDown.png) no-repeat;
+}
+
+.upDownRow {
+	padding-bottom: 30px;
+}
+
+.downArrow {
+	background-position: 0px -29px;
+}
+ 
+.upDownSelector {
+	position: relative;
+	margin: 10px auto 10px auto;
+	width: 300px;
+	border: 2px solid #b3b3b3;
+	height: 183px;
+	font-size: 153px;
+	line-height: 153px;
+	color: #3f3f3f;
+	font-family: 'Foco W01 Light', sans-serif;
+	
+}
+.upDownOption {
+	position: absolute;
+	top: 15px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+.upDownImage {
+	top: 0px;
+}
+
+.lineWithButton {
+	margin-right: 20px;
+}
+
+.button {
+	display: inline-block;
+	padding: 20px 0px 20px 0px;
+	width: 150px;
+	font-size: 24px;
+	font-family: 'Foco W01 Bold', sans-serif;
+	text-align: center;
+	background: #00c4b2;
+	color: #fff;
+}
+
+.buttonStandard {
+	width: 125px;
+	font-size: 14px;
+	line-height: 14px;
+	padding: 10px 0px 10px 0px;
+	font-family: 'Foco W01 Regular', Arial, sans-serif;
+}
+
+.button:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.buttonWhite {
+	border: 1px solid #e4e4e4;
+	background: #fff;
+	color: #50595d;
+	
+}
+
+.buttonWhite:hover {
+	color: #50595d;
+}
+
+
+div.containerFloat{
+	min-width:180px;
+	height:240px;
+	float:left;
+	border-left:1px solid #999;
+	padding:0 45px;
+	margin: 30px 0;
+}
+
+div.containerFloat:first-child{
+	border:0;
+}
+
+#gender{
+	display:none;
+}
+
+.genderIcons{
+	width:166px;
+	height:170px;
+}
+
+.genderIcons .male{
+	background: transparent url(../img/gender.png) 0 -13px no-repeat;
+	display:inline-block;
+	*display:inline;
+	zoom:0;
+	width:80px;
+	height:170px;
+}
+
+.genderIcons .male.on{
+	background-position:0 -202px;
+}
+
+.genderIcons .female{
+	background: transparent url(../img/gender.png) -83px -13px no-repeat;
+	display:inline-block;
+	*display:inline;
+	zoom:0;
+	width:80px;
+	height:170px;
+}
+
+.genderIcons .female.on{
+	background-position:-83px -202px;
+}
+
+.sliderWrapper{
+	background: transparent url(../img/bg_slider.png) no-repeat;
+	width:180px;
+	height:28px;
+}
+
+.sliderWrapper #genderSlider{
+	background:none;
+	height:28px;
+	border:0;
+	margin:0 18px 0 11px;
+}
+
+.sliderWrapper #genderSlider .ui-slider-handle{
+	width:23px;
+	height:23px;
+	top:2px;
+	cursor:pointer;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+
+.runningMap{
+	background: transparent url(../img/content/img_BosToNYC.png) no-repeat;
+	height: 288px;
+    overflow: visible;
+    position: relative;
+    width: 1141px;
+    margin-left:-570px;
+    left:50%;
+    margin-bottom:35px;
+}
+
+.runningMap .bosToNYC{
+	background: transparent url(../img/content/img_BosToNYC.png) no-repeat;
+}
+
+.statusbar{
+	background:#f7f7f7;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	font-size:25px;
+	text-align:center;
+	height:38px;
+	font-family: "Foco W01 Light", Arial, sans-serif;
+	padding:20px 10px;
+	line-height:38px;
+}
+
+.greenText{
+	color:#00ad9b;
+}
+
+#goalTracker {
+	position: relative;
+	width: 100%;
+	height: 456px;
+	background: #f00;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+.goalSlide {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 456px;
+}
+
+.bwBack,
+.activeBack {
+	width: 100%;
+	height: 456px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.bwBack {
+	z-index: 0;
+}
+
+.activeBack {
+	z-index: 10;
+}
+
+.inactiveSprite {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	z-index: 20;
+}
+
+.activeSprite {
+	position: absolute;
+	bottom: 0px;
+	left: 510px;
+	z-index: 20;
+}
+
+.shadowSprite {
+	position: absolute;
+	bottom: 0px;
+	left: 410px;
+	z-index: 15;
+}
+
+.grayRow {
+	padding: 20px 0 20px 0;
+}
+
+.statRow .statWide {
+	float: left;
+	width: 175px;
+	height: 110px;
+	padding: 0px 5px 0px 15px;
+	border-left: 1px solid #a6a6a6;
+}
+
+.statRow .firstStat {
+	border-left: none;
+}
+
+.statRow .statWide h4 {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: normal;
+	margin: 0px 0px 2px 0;
+	color: #535353;
+	
+}
+
+.statRow .stat {
+	position: relative;
+	float: left;
+	width: 135px;
+	padding: 22px  5px 0px 10px;
+	height: 88px;
+	border-left: 1px solid #a6a6a6;
+	font-family: 'Foco W01 Light', Arial, sans-serif;
+	color: #00ad9b;
+	font-size: 45px;
+	line-height: 45px;
+}
+
+.statRow .stat h4 {
+	position: absolute;
+	bottom: 0px;
+	left: 10px;
+	font-family: 'Foco W01 Regular', Arial, sans-serif;
+	font-size: 14px;
+	line-height: 14px;
+	color: #828282;
+}
+
+
+.statTarget, .statEnd {
+	display: block;
+	padding: 3px 0 3px 40px;
+	font-size: 26px;
+	line-height: 26px;
+	
+}
+
+.statTarget {
+	background: transparent url(../img/content/img-runner-blue.gif) no-repeat left center;
+	margin-bottom: 5px;
+}
+
+
+.statEnd {
+	color: #00ad9b;
+	background: transparent url(../img/content/img-runner-color.gif) no-repeat left center;
+}
+
+.goalPowered {
+
+}
+
+.statRow .goalPowered h4 {
+	font-size: 18px;
+	color: #535353;
+	margin: 0 0 5px 0;
+	
+}
+
+.appName {
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	padding: 0 0 0 25px;
+}
+
+.stat hr, .statWide hr {
+	margin: 10px 0 10px 0;
+}
+
+#MapMyFitness {
+	background-image: url(../img/content/icon-MapMyFitness-small.png);
+}
+
+.popup{
+	display:none;
+}
+
+.popup.opacity{
+	background: transparent url(../img/opacity.png) repeat;
+	position:fixed;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+}
+
+.popup .container{
+	background:#fff;
+	padding:25px;
+	width:520px;
+	margin-top:2%;
+}
+
+.calendarContainer{
+	margin:20px auto 25px;
+	background:#f1f1f1;
+	border:1px solid #dfdfdf;
+	width:373px;
+}
+
+.calendarContainer .dropdown{
+	background-color: transparent;
+	border:0;
+	height:35px;
+	margin:10px;
+}
+
+.calendarContainer #monthDropdown.dropdown{
+	float:left;
+	width:155px;
+}
+
+.calendarContainer .dropdown select{
+	font-size:23px;
+	height:35px;
+}
+
+.calendarContainer #monthDropdown.dropdown select{
+	width:180px;
+}
+
+.calendarContainer #yearDropdown.dropdown{
+	float:right;
+	width:95px;
+}
+
+.calendarContainer #yearDropdown.dropdown select{
+	width:120px;
+}
+
+.calendarContainer .calendarDatePicker{
+	
+}
+
+.calendarContainer .ui-datepicker{
+	margin:0 auto;
+	padding:0;
+	width:373px;
+	border:0;
+}
+
+.calendarContainer .ui-datepicker .ui-datepicker-header{
+	display:none;
+}
+
+.calendarContainer .ui-datepicker .ui-datepicker-calendar{
+	margin:0;
+}
+
+.calendarContainer .ui-datepicker .ui-datepicker-calendar thead{
+	display:none;
+}
+
+.calendarContainer .ui-datepicker .ui-datepicker-calendar td{
+	padding:0;
+	border:1px solid #dfdfdf;
+}
+
+.calendarContainer .ui-datepicker .ui-datepicker-calendar td .ui-state-default{
+	background:#f8f8f8;
+	text-align:center;
+	font-weight:normal;
+	font-size:20px;
+	color:#7a7a7a;
+	border:0;
+}
+
+.calendarContainer .ui-datepicker .ui-datepicker-calendar td .ui-state-hover{
+	background:#d3edea;
+	color:#7a7a7a;
+	border:0;
+}
+
+.calendarContainer .ui-datepicker .ui-datepicker-calendar td .ui-state-highlight{
+	border:0;
+}
+
+.calendarContainer .ui-datepicker .ui-datepicker-calendar td .ui-state-active{
+	background:#00ad9a;
+	color:#fff;
+	border:0;
+}
+
+
+/** App selection notice **/
+
+.appSelectionRow {
+	position: relative;
+	margin-top: 0px;
+	margin-bottom: 25px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	background: #fafafa;
+	padding: 0px;
+}
+
+.noticeContainer {
+	position: relative;
+	padding: 15px;
+}
+
+.noticeCopy {
+	float: left;
+	margin-right: 20px;
+}
+
+.badgeHolder {
+	position: relative;
+	float: left;
+}
+
+.appBadge {
+	float: left;
+	margin-right: 20px;
+	width: 80px;
+	text-align: center;
+
+}	
+	
+.appSelectionRow h4 {
+	font-size: 21px;
+}	
+	
+.appSelectionRow h4, .appSelectionRow h5 {
+	font-weight: normal;
+	color: #9f9f9f;
+	font-family: 'Foco W01 Light';
+}
+
+.appBadge .icon {
+	float: left;
+}
+
+.appBadge .title {
+	text-align: center;
+	color: #9f9f9f;
+}
+
+.smallApp .appIcon {
+	display: inline-block;
+	position: relative;
+	width: 50px;
+	height: 50px;
+}	
+
+.appIcon {
+	background-repeat: no-repeat;
+}
+
+.smallApp #FitBit {
+	background-image: url(../img/content/icn-apps-fitbit-50x50.png);
+}
+.smallApp #MapMyFitness {
+	background-image: url(../img/content/icn-apps-mapmyfitness-50x50.png);
+}
+.smallApp #FitSync {
+	background-image: url(../img/content/icn-apps-fitsync-50x50.png);
+}
+
+.linkedIcon {
+	width: 23px;
+	height: 23px;
+	display: block;
+	position: absolute;
+	right: -5px;
+	bottom: -5px;
+	background: transparent url(../img/icon-link.png) no-repeat;
+}
+
+.badgeTracker {
+	display: none;
+	position: absolute;
+	bottom: -1px;
+	left: 0px;
+	width: 20px;
+	height: 12px;
+	background: #fff url(../img/badgeTracker.gif) no-repeat;
+}
+
+/** Nav **/
+
+.navbar-inner {
+	min-height: 22px;
+	height: 22px;
+	border-radius: 0px !important;
+}
+
+.navbar-inner a{
+	text-decoration: none;
+}
+
+.right-nav {
+	float: right;
+}
+
+.right-nav a {
+	display: block;
+	float: left;
+	height: 21px;
+	padding-top: 2px;
+	padding-left: 9px;
+	margin-left: 9px;
+	border-left: 1px solid #515151;
+	color: #fff;
+}
+
+.right-nav a.first {
+	border-left: none;
+}
+
+#primaryNav {
+	background: #fff;
+	border: none;
+	box-shadow: none;
+	height: 60px;
+}
+
+#logo {
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	background: transparent url(../img/logo.png) no-repeat;
+	text-indent: -9999px;
+	display: block;
+	width: 139px;
+	height: 31px;
+}
+
+.secondaryNav {
+	background: transparent url(../img/bg-stripe.gif) !important;
+	border: none !important;
+	min-height: 50px;
+	height: auto;
+}
+
+.navIcon {
+	vertical-align: middle;
+	display: inline-block;
+	margin-right: 2px;
+	width: 27px;
+	height: 27px;
+	background: transparent url(../img/icons-primary.png) no-repeat;
+	text-indent: -9999px;
+}
+
+.nav-secondary {
+	
+	background-image: url(../img/icons-secondary.png);
+}
+
+.nav-data {
+	background-position: -0px;
+}
+.nav-goals {
+	background-position: -115px;
+}
+.nav-apps {
+	background-position: -236px;
+}
+
+.primaryNavLinks {
+	position: absolute;
+	top: 10px;
+	right: 0px;
+}
+
+.primaryNavLinks li {
+	margin-left: 50px;
+}
+
+.primaryNavLinks li a {
+	color: #717171;
+	text-transform: uppercase;
+	font-size: 14px;
+}	
+
+.navLinks {
+	list-style: none;
+}
+
+.navLinks li {
+	float: left;
+}
+
+.secondaryNavLinks {
+	margin: 12px auto;
+	width: auto;
+	text-align: center;
+	display: block;
+}
+
+.secondaryNavLinks li{
+	display: inline-block;
+	float: none;
+	margin-right: 40px;
+	margin-left: 40px;	
+}
+
+.secondaryNavLinks li a {
+	color: #000;
+	font-size: 16px;
+}
+.navLinks li a:hover {
+	text-decoration: none;
+}
+
+.nav-fitness {
+	background-position: -0px;
+}
+.nav-nutrition {
+	background-position: -167px;
+}
+.nav-health {
+	background-position: -351px;
+}
+.nav-sleep {
+	width: 35px;
+	background-position: -515px;
+}
+.nav-insurance {
+	background-position: -690px;
+}
+
+#primaryNav .container {
+	height: 60px;
+}
+
+#primaryNav .navTracker {
+	display: none;
+	position: absolute;
+	left: 0px;
+	bottom: -3px;
+	width: 30px;
+	height: 15px;
+	background: transparent url(../img/triangle-stripe.png) no-repeat;
+}
+
+.secondaryNav .navTracker {
+	display: none;
+	position: absolute;
+	left: 0px;
+	bottom: -2px;
+	width: 24px;
+	height: 12px;
+	background: transparent url(../img/triangle-white.png) no-repeat;
+}
+
+/*public home*/
+.hasCarousel{
+	position:absolute;
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+.hasCarousel .box{
+	max-width:100%;
+	max-height:100%;
+}
+
+.hasCarousel .slider{
+	display:none;
+	right:0;
+	left:0;
+	height:100%;
+	position:absolute;
+}
+
+.hasCarousel .slider.selected{
+	display:block;
+}
+
+.hasCarousel .slider.overlay{
+	z-index:1;
+}
+
+.hasCarousel #slider_landing{
+	background:transparent url(../img/bg-rptr-white.gif) repeat;
+}
+
+.hasCarousel #slider_goals{
+	background:#db448e url(../img/bg-rptr-pink.gif) repeat-x;
+}
+
+.hasCarousel #slider_apps{
+	background:#a8d03a url(../img/bg-rptr-green.gif) repeat-x;
+}
+
+.hasCarousel #slider_data{
+	background:#00add2 url(../img/bg-rptr-blue.gif) repeat-x;
+}
+
+.hasCarousel #slider_itriage{
+	background:#77419a url(../img/bg-rptr-purple.gif) repeat-x;
+}
+
+.hasCarousel .stepControl{
+	position:fixed;
+	top:200px;
+	font-size:100px;
+	cursor:pointer;
+	z-index:10;
+	width:68px;
+	height:127px;
+}
+
+.hasCarousel .stepControl.previous{
+	background:transparent url(../img/arrows_carousel.png) no-repeat 1px -265px;
+	background:transparent url(../img/arrows_carousel.png) no-repeat 1px -0px;
+	left:50px;
+}
+
+.hasCarousel .stepControl.previous:hover{
+	background-position:1px -398px;
+	background-position:1px -133px;
+}
+
+.hasCarousel .stepControl.next{
+	background:transparent url(../img/arrows_carousel.png) no-repeat -69px -265px;
+	background:transparent url(../img/arrows_carousel.png) no-repeat -69px -0px;
+	right:50px;
+}
+
+.hasCarousel .stepControl.next:hover{
+	background-position:-69px -397px;
+	background-position:-69px -133px;
+}
+
+.hasCarousel .stepControl.previous.gray{
+	background:transparent url(../img/arrows_carousel.png) no-repeat 1px -265px;
+	left:50px;
+}
+
+.hasCarousel .stepControl.previous.gray:hover{
+	background-position:1px -398px;
+}
+
+.hasCarousel .stepControl.next.gray{
+	background:transparent url(../img/arrows_carousel.png) no-repeat -69px -265px;
+	right:50px;
+}
+
+.hasCarousel .stepControl.next.gray:hover{
+	background-position:-69px -397px;
+}
+
+
+/*public home structure*/
+#public_home .container{
+	height:656px;
+	width:auto;
+	max-width:1000px;
+}
+
+#public_home .container .header{
+	margin:25px 10px 0;
+	position:relative;
+}
+
+.logo{
+	background:transparent url(../img/lgo-carepass-green.gif) no-repeat;
+	display:block;
+	width:163px;
+	height:36px;
+}
+
+.logo.white{
+	background:transparent url(../img/lgo-carepass-white.png) no-repeat;
+}
+
+#public_home .container, #public_home .container a, #public_home .container h1 , #public_home .container h2{
+	color:#fff;
+}
+
+#public_home .header .login{
+	position:absolute;
+	right:0;
+	bottom:0;
+	font-size:16px;
+}
+
+#slider_landing .header .login{
+	color:#697479;
+}
+
+#public_home .content{
+	
+}
+
+#public_home .content .left_col{
+	position:absolute;
+	position:relative;
+	left:0;
+	height:515px;
+	width:520px;
+	width:460px;
+	margin:0 10px;
+}
+
+#public_home .content .right_col{
+	position:absolute;
+	position:relative;
+	right:0;
+	width:481px;
+	width:500px;
+	height:515px;
+	margin:0 10px;
+}
+
+#public_home .footer{
+	position:absolute;
+	position:relative;
+	bottom:0;
+	right:0;
+	height:80px;
+	max-width:100%;
+	line-height:80px;
+	text-align:right;
+	font-size:21px;
+}
+
+#public_home .text{
+	margin:0 65px 0 0;
+}
+
+#public_home .text h1{
+	font-size: 57px;
+	line-height:50px;
+}
+
+#public_home .text p{
+	font-size:20px;
+	line-height:30px;
+}
+
+#public_home .getStarted{
+	position:absolute;
+	bottom:0;
+	font-size:17px;
+}
+
+#public_home .getStarted .button{
+	-moz-box-shadow:    0 0 5px 1px #A9A9A9;
+  	-webkit-box-shadow: 0 0 5px 1px #A9A9A9;
+ 	 box-shadow:        0 0 5px 1px #A9A9A9;
+ 	 padding: 23px 35px;
+ 	 margin: 0 0 12px 0;
+ 	 background:#fff;
+ 	 color:#5e5e5e;
+}
+
+#public_home .getStarted .underline{
+	text-decoration:underline;
+}
+
+#public_home .img{
+	
+}
+
+#public_home .footer .chicklets{
+	display:inline-block;
+	*display:inline;
+	zoom:1;
+	margin:0 0 0 20px;
+}
+
+#public_home .footer .chicklet{
+	display:inline-block;
+	*display:inline;
+	zoom:1;
+	height:39px;
+	width:39px;
+	vertical-align:middle;
+	margin:6px;
+}
+
+#public_home .footer #itriage.chicklet{
+	background:transparent url(../img/content/icn-apps-itriage-39x39.png) no-repeat;
+}
+#public_home .footer #fitsync.chicklet{
+	background:transparent url(../img/content/icn-apps-fitsync-39x39.png) no-repeat;
+}
+#public_home .footer #fooducate.chicklet{
+	background:transparent url(../img/content/icn-apps-fooducate-39x39.png) no-repeat;
+}
+#public_home .footer #fitbit.chicklet{
+	background:transparent url(../img/content/icn-apps-fitbit-39x39.png) no-repeat;
+}
+#public_home .footer #fatsecret.chicklet{
+	background:transparent url(../img/content/icn-apps-fatsecret-39x39.png) no-repeat;
+}
+#public_home .footer #thryve.chicklet{
+	background:transparent url(../img/content/icn-apps-thryve-39x39.png) no-repeat;
+}
+#public_home .footer #mapmyfitness.chicklet{
+	background:transparent url(../img/content/icn-apps-mapmyfitness-39x39.png) no-repeat;
+}
+#public_home .footer #gympact.chicklet{
+	background:transparent url(../img/content/icn-apps-gympact-39x39.png) no-repeat;
+}
+#public_home .footer #goodRX.chicklet{
+	background:transparent url(../img/content/icn-apps-goodrx-39x39.png) no-repeat;
+}
+
+#public_home #slider_landing .container, #public_home #slider_landing .container a, #public_home #slider_landing .container h1, #public_home #slider_landing .container h2{
+	color:#5e5e5e;
+}
+
+#public_home #slider_landing h1{
+	font-size:38px;
+}
+
+#public_home #slider_landing .button{
+	background:#fff;
+}
+
+#public_home #slider_landing .text{
+	margin:150px 50px 0 0;
+}
+
+#public_home #slider_landing .img{
+	position:absolute;
+	bottom:0;
+}
+
+#public_home #slider_goals .text{
+    /*margin: 158px 105px 0 0;*/
+}
+
+#public_home #slider_goals h1{
+    margin: 100px 100px 40px 0;
+}
+
+#public_home #slider_goals .img{
+	margin:60px 0 0 0;
+}
+
+#public_home #slider_apps h1{
+    margin: 100px 0px 40px 0;
+}
+
+#public_home #slider_apps .img{
+	margin:60px 0 0 0;
+}
+
+#public_home #slider_data h1{
+    margin: 80px 0px 10px 0;
+}
+
+#public_home #slider_data .img{
+	margin:60px 0 0 0;
+}
+
+#public_home #slider_itriage h1{
+    margin: 90px 0px 10px 0;
+}
+
+#public_home #slider_itriage .img{
+	margin:160px 0 0 0;
+}
