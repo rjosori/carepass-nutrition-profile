@@ -9,7 +9,9 @@ All profiles are based on the original design by DIGITAS and Medullan Inc.
 
 Based on files provided by Medullan: https://www.dropbox.com/sh/uuk0040ljg15sax/40bcvKTS3o/trunk.
 
-New CSS styles located at: css/styles.css.
+New CSS styles located at: /css/styles.css.
+
+Some additional image files added to /img folder.
 
 HTML files located in the root level.
 
