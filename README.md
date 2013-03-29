@@ -1,7 +1,7 @@
 carepass-nutrition-profile
 ==========================
 
-Basic HTML/CSS for Aetna's CarePass Nutrition Profile. 
+Basic HTML/CSS for Aetna's CarePass Nutrition (and other) Profiles. 
 
 Developed by Roberto Osorio @graphilactic, for Medullan Inc.
 
