@@ -2,6 +2,12 @@
 	font-family:'Foco W01 Regular', 'Myriad Pro', 'Myriad', sans-serif;
 }
 
+#logo{
+	position:static;
+	margin:14px 0 15px;
+	float:left;
+}
+
 #table-toolbar{
 	margin-top:90px;
 	margin-bottom:20px;
@@ -100,4 +106,140 @@
 .hidden{
 	position:absolute;
 	left:-70000px;
+}
+
+td.chk-box, th.chk-box{
+	text-align:center;
+}
+
+/*Primary Nav Styles*/
+ul.primaryNavLinks{
+	position: static;
+	height:60px;
+	display:inline-block;
+	margin:0;
+	float:right;
+}
+
+ul.primaryNavLinks li{
+	height:60px;
+	display:inline-block;
+}
+
+ul.primaryNavLinks li.active{
+	background:url('../img/primary-active-marker.png') center bottom no-repeat;
+}
+
+.primaryNavLinks li a{
+	height:20px;
+	display: inline-block;
+	padding:5px 0 5px 35px;
+	background:url('../img/icons-primary.png');
+	background-repeat: no-repeat;
+	margin:15px 0 15px;	
+}
+
+.primaryNavLinks li a.nav-data {
+	background-position: 0px 0px;
+}
+
+.primaryNavLinks li a.nav-goals {
+	background-position: 0px -30px;
+}
+
+.primaryNavLinks li a.nav-apps {
+	background-position: 0px -60px;
+}
+
+.primaryNavLinks li a:hover, .primaryNavLinks li a:focus, .primaryNavLinks .active a{
+	color:#00AC9B;
+}
+
+.primaryNavLinks .active .nav-data, .primaryNavLinks li a.nav-data:focus, 
+.primaryNavLinks li a.nav-data:hover{
+	background-position: 0px -90px;
+}
+
+.primaryNavLinks .active .nav-goals, .primaryNavLinks li a.nav-goals:focus, 
+.primaryNavLinks li a.nav-goals:hover{
+	background-position: 0 -120px;
+}
+
+.primaryNavLinks .active .nav-apps, .primaryNavLinks li a.nav-apps:focus, 
+.primaryNavLinks li a.nav-apps:hover{
+	background-position: 0 -150px;
+}
+
+/*Secondary Nav Styles*/
+ul.secondaryNavLinks{
+	margin-top:0;
+	margin-bottom:0;
+	height:54px;
+}
+
+.secondaryNavLinks li{
+	display: inline-block;
+	height:54px;
+}
+.secondaryNavLinks li.active{
+	background:url('../img/secondary-active-marker.png') no-repeat center bottom;
+}
+
+.secondaryNavLinks li a.nav-secondary{
+	height:20px;
+	display: inline-block;
+	background:url('../img/icons-secondary.png');
+	background-repeat:no-repeat;
+	padding:5px 0 5px 40px;
+	margin:12px 0;
+}
+
+.secondaryNavLinks li a.nav-fitness{
+	background-position: 0px 0px;
+}
+
+.secondaryNavLinks li a.nav-nutrition{
+	background-position: 0px -30px;
+}
+
+.secondaryNavLinks li a.nav-health{
+	background-position: 0px -60px;
+}
+
+.secondaryNavLinks li a.nav-sleep{
+	background-position: 0px -90px;
+}
+
+.secondaryNavLinks li a.nav-insurance{
+	background-position: 0px -120px;
+}
+
+
+.secondaryNavLinks li.active a.nav-secondary, .secondaryNavLinks li a:hover, .secondaryNavLinks li a:focus{
+	color:#00AC9B;
+}
+
+.secondaryNavLinks li.active a.nav-fitness, .secondaryNavLinks li a.nav-fitness:focus, 
+.secondaryNavLinks li a.nav-fitness:hover{
+	background-position: 0px -150px;
+}
+
+.secondaryNavLinks li.active a.nav-nutrition, .secondaryNavLinks li a.nav-nutrition:hover,
+.secondaryNavLinks li a.nav-nutrition:focus {
+	background-position: 0px -180px;
+}
+
+.secondaryNavLinks li.active a.nav-health, .secondaryNavLinks li a.nav-health:hover,
+.secondaryNavLinks li a.nav-health:focus{
+	background-position: 0px -210px;
+}
+
+.secondaryNavLinks li.active a.nav-sleep, .secondaryNavLinks li a.nav-sleep:hover,
+.secondaryNavLinks li a.nav-sleep:focus{
+	background-position: 0px -240px;
+}
+
+.secondaryNavLinks li.active a.nav-insurance, .secondaryNavLinks li a.nav-insurance:hover,
+.secondaryNavLinks li a.nav-insurance:focus{
+	background-position: 0px -270px;
 }
