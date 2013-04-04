@@ -245,9 +245,17 @@ ul.secondaryNavLinks{
 }
 
 /*Sleep Profile*/
-.details-header{
+.sleep-table tbody{
+	border-top:none !important;
+}
+
+.sleep-table td{
+	padding:14px 8px;
+}
+
+.sleep-details-header{
 	color:#000000;
-	background-color:#CCCCCC;
+	background-color:#CCCCCC !important;
 	font-size:11px !important;
 	text-transform:uppercase;
 	font-weight:bold;
@@ -255,20 +263,23 @@ ul.secondaryNavLinks{
 	border-bottom:1px solid #999999;
 }
 
-.details-header a{
+.sleep-details-header a{
 	display: block;
 	cursor:pointer;
 	color:#000000;
+	background:url(../img/details-arrow.png);
+	background-position:center left;
+	background-repeat:no-repeat;
+	padding-left:15px;
 }
 
-.details-table{
+.sleep-details-table{
 	background-color:#e9faf9 !important;
 	border-bottom:1px solid #333333;
-	position:absolute;
 	top:-40000px;
 }
 
-.details-table .table{
+.sleep-details-table .table{
 	margin-bottom:0px;
 }
 
@@ -281,4 +292,20 @@ ul.secondaryNavLinks{
 .blue-table td{
 	border:none !important;
 	background-color:#e9faf9 !important;
+}
+
+#filter-by{
+	text-align:center;
+	color: #00AC9B;
+    font-family: 'Foco W01 Bold','Myriad Pro','Myriad',sans-serif;
+    font-weight: bold;
+    margin-top:-10px;
+}
+
+#filter-by select{
+	color:#333333;
+	margin-left:5px;
+	font-weight:bold;
+	font-size:18px;
+	font-family: 'Foco W01 Bold','Myriad Pro','Myriad',sans-serif;
 }

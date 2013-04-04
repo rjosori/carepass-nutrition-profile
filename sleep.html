@@ -5,7 +5,9 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>CarePass</title>
 		<link rel="stylesheet" type="text/css" media="all" href="lib/bootstrap/css/bootstrap.min.css" />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/actions.js"></script>
 		<link rel="stylesheet" type="text/css" media="all" href="css/main.css" />
 		<link rel="stylesheet" type="text/css" media="all" href="css/styles.css" />
 	</head>
@@ -46,7 +48,7 @@
 						&nbsp;
 					</div>
 					<ul class="navLinks secondaryNavLinks">
-						<li class='active'>
+						<li>
 							<a href="#" class="nav-secondary nav-fitness">Fitness</a>
 						</li>
 						<li>
@@ -55,7 +57,7 @@
 						<li>
 							<a href="#" class="nav-secondary nav-health">Health</a>
 						</li>
-						<li>
+						<li class='active'>
 							<a href="#" class="nav-secondary nav-sleep">Sleep</a>
 						</li>
 						<li>
@@ -77,7 +79,15 @@
 				<div id="add-btn" class="span2">
 					<a href="#">Add Activity</a>
 				</div>
-				<p id="powered-by" class="span6">Powered by</p>
+				<div id="filter-by" class='span4'>
+					Filter by: 
+					<select>
+						<option value="Week">Week</option>
+						<option value="Week">Month</option>
+						<option value="Week">Year</option>
+					</select>
+				</div>
+				<p id="powered-by" class="span2">Powered by</p>
 				<div class="span4">
 					<span id="runkeeper-ico" class="app-icon">&nbsp;</span>
 					<span id="fitbit-ico" class="app-icon">&nbsp;</span>
@@ -86,59 +96,290 @@
 				</div>
 			</div>
 			<div class="row">
-				<table class="span12 table table-striped profile-table">
+				<table class="span12 table table-striped sleep-table">
 					<thead>
 						<tr>
 							<th>Date</th>
-							<th>Activity</th>
-							<th>Duration</th>
-							<th>Distance</th>
-							<th>Calories Burned</th>
+							<th>Start Time</th>
+							<th>End Time</th>
+							<th>Type</th>
+							<th>Light Sleep</th>
+							<th>Deep Sleep</th>
+							<th>Fell Asleep In</th>
+							<th>In Bed For</th>
+							<th>Awake For</th>
+							<th>Woke Up</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr class="active">
 							<td>Thursday, 02/28/13</td>
-							<td>Cycling</td>
-							<td>3 hrs. 3 mins.</td>
-							<td>1.86 mi.</td>
-							<td>100</td>
+							<td>11:25PM</td>
+							<td>6:50AM</td>
+							<td>Night Sleep</td>
+							<td>180 mins</td>
+							<td>300 mins</td>
+							<td>15 mins</td>
+							<td>8.1 hours</td>
+							<td>40 mins</td>
+							<td>3 times</td>
+						</tr>
+					</tbody>
+					<tbody>
+						<!-- Details Section -->
+						<tr>
+							<td class="sleep-details-header" colspan="10">
+								<a href="#">Sleep Episode Details</a>
+							</td>
 						</tr>
 						<tr>
-							<td>Thursday, 02/28/13</td>
-							<td>Cycling</td>
-							<td>3 hrs. 3 mins.</td>
-							<td>1.86 mi.</td>
-							<td>100</td>
+							<td class="sleep-details-table" colspan="10">
+								<table class="table blue-table">
+									<thead>
+										<tr>
+											<th>Time Asleep</th>
+											<th>Time to Rise</th>
+											<th>REM</th>
+											<th>Sleep Quality Index</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>7.3 hours</td>
+											<td>5 mins</td>
+											<td>120</td>
+											<td>89</td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
 						</tr>
+						<!-- End Details table -->
+						
+						<tbody>
 						<tr>
 							<td>Thursday, 02/28/13</td>
-							<td>Cycling</td>
-							<td>3 hrs. 3 mins.</td>
-							<td>1.86 mi.</td>
-							<td>100</td>
+							<td>11:25PM</td>
+							<td>6:50AM</td>
+							<td>Night Sleep</td>
+							<td>180 mins</td>
+							<td>300 mins</td>
+							<td>15 mins</td>
+							<td>8.1 hours</td>
+							<td>40 mins</td>
+							<td>3 times</td>
+						</tr>
+					</tbody>
+					<tbody>
+						<!-- Details Section -->
+						<tr>
+							<td class="sleep-details-header" colspan="10">
+								<a href="#">Sleep Episode Details</a>
+							</td>
 						</tr>
 						<tr>
-							<td>Thursday, 02/28/13</td>
-							<td>Cycling</td>
-							<td>3 hrs. 3 mins.</td>
-							<td>1.86 mi.</td>
-							<td>100</td>
+							<td class="sleep-details-table" colspan="10">
+								<table class="table blue-table">
+									<thead>
+										<tr>
+											<th>Time Asleep</th>
+											<th>Time to Rise</th>
+											<th>REM</th>
+											<th>Sleep Quality Index</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>7.3 hours</td>
+											<td>5 mins</td>
+											<td>120</td>
+											<td>89</td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
 						</tr>
+						<!-- End Details table -->
+						
+						<tbody>
 						<tr>
 							<td>Thursday, 02/28/13</td>
-							<td>Cycling</td>
-							<td>3 hrs. 3 mins.</td>
-							<td>1.86 mi.</td>
-							<td>100</td>
+							<td>11:25PM</td>
+							<td>6:50AM</td>
+							<td>Night Sleep</td>
+							<td>180 mins</td>
+							<td>300 mins</td>
+							<td>15 mins</td>
+							<td>8.1 hours</td>
+							<td>40 mins</td>
+							<td>3 times</td>
+						</tr>
+					</tbody>
+					<tbody>
+						<!-- Details Section -->
+						<tr>
+							<td class="sleep-details-header" colspan="10">
+								<a href="#">Sleep Episode Details</a>
+							</td>
 						</tr>
 						<tr>
-							<td>Thursday, 02/28/13</td>
-							<td>Cycling</td>
-							<td>3 hrs. 3 mins.</td>
-							<td>1.86 mi.</td>
-							<td>100</td>
+							<td class="sleep-details-table" colspan="10">
+								<table class="table blue-table">
+									<thead>
+										<tr>
+											<th>Time Asleep</th>
+											<th>Time to Rise</th>
+											<th>REM</th>
+											<th>Sleep Quality Index</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>7.3 hours</td>
+											<td>5 mins</td>
+											<td>120</td>
+											<td>89</td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
 						</tr>
+						<!-- End Details table -->
+						
+						<tbody>
+						<tr>
+							<td>Thursday, 02/28/13</td>
+							<td>11:25PM</td>
+							<td>6:50AM</td>
+							<td>Night Sleep</td>
+							<td>180 mins</td>
+							<td>300 mins</td>
+							<td>15 mins</td>
+							<td>8.1 hours</td>
+							<td>40 mins</td>
+							<td>3 times</td>
+						</tr>
+					</tbody>
+					<tbody>
+						<!-- Details Section -->
+						<tr>
+							<td class="sleep-details-header" colspan="10">
+								<a href="#">Sleep Episode Details</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="sleep-details-table" colspan="10">
+								<table class="table blue-table">
+									<thead>
+										<tr>
+											<th>Time Asleep</th>
+											<th>Time to Rise</th>
+											<th>REM</th>
+											<th>Sleep Quality Index</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>7.3 hours</td>
+											<td>5 mins</td>
+											<td>120</td>
+											<td>89</td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+						<!-- End Details table -->
+						
+						<tbody>
+						<tr>
+							<td>Thursday, 02/28/13</td>
+							<td>11:25PM</td>
+							<td>6:50AM</td>
+							<td>Night Sleep</td>
+							<td>180 mins</td>
+							<td>300 mins</td>
+							<td>15 mins</td>
+							<td>8.1 hours</td>
+							<td>40 mins</td>
+							<td>3 times</td>
+						</tr>
+					</tbody>
+					<tbody>
+						<!-- Details Section -->
+						<tr>
+							<td class="sleep-details-header" colspan="10">
+								<a href="#">Sleep Episode Details</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="sleep-details-table" colspan="10">
+								<table class="table blue-table">
+									<thead>
+										<tr>
+											<th>Time Asleep</th>
+											<th>Time to Rise</th>
+											<th>REM</th>
+											<th>Sleep Quality Index</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>7.3 hours</td>
+											<td>5 mins</td>
+											<td>120</td>
+											<td>89</td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+						<!-- End Details table -->
+						
+						<tbody>
+						<tr>
+							<td>Thursday, 02/28/13</td>
+							<td>11:25PM</td>
+							<td>6:50AM</td>
+							<td>Night Sleep</td>
+							<td>180 mins</td>
+							<td>300 mins</td>
+							<td>15 mins</td>
+							<td>8.1 hours</td>
+							<td>40 mins</td>
+							<td>3 times</td>
+						</tr>
+					</tbody>
+					<tbody>
+						<!-- Details Section -->
+						<tr>
+							<td class="sleep-details-header" colspan="10">
+								<a href="#">Sleep Episode Details</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="sleep-details-table" colspan="10">
+								<table class="table blue-table">
+									<thead>
+										<tr>
+											<th>Time Asleep</th>
+											<th>Time to Rise</th>
+											<th>REM</th>
+											<th>Sleep Quality Index</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>7.3 hours</td>
+											<td>5 mins</td>
+											<td>120</td>
+											<td>89</td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+						<!-- End Details table -->
 					</tbody>
 				</table>
 			</div>
