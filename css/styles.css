@@ -39,7 +39,7 @@
 	margin-left:10px;
 }
 
-.profile-table thead tr th{
+.profile-table thead tr th,.sleep-table thead tr th{
 	font-family:'Foco W01 Bold', 'Myriad Pro', 'Myriad', sans-serif;
 	text-transform:uppercase;
 	background-color:#000000;
@@ -53,7 +53,7 @@
 	padding-left:35px;
 }
 
-.profile-table tr.active > td{
+.profile-table tr.active > td, .sleep-table tr.active > td{
 	font-weight:bold;
 	color:#333333;
 }
@@ -242,4 +242,43 @@ ul.secondaryNavLinks{
 .secondaryNavLinks li.active a.nav-insurance, .secondaryNavLinks li a.nav-insurance:hover,
 .secondaryNavLinks li a.nav-insurance:focus{
 	background-position: 0px -270px;
+}
+
+/*Sleep Profile*/
+.details-header{
+	color:#000000;
+	background-color:#CCCCCC;
+	font-size:11px !important;
+	text-transform:uppercase;
+	font-weight:bold;
+	padding-top:5px !important; padding-bottom:5px !important;
+	border-bottom:1px solid #999999;
+}
+
+.details-header a{
+	display: block;
+	cursor:pointer;
+	color:#000000;
+}
+
+.details-table{
+	background-color:#e9faf9 !important;
+	border-bottom:1px solid #333333;
+	position:absolute;
+	top:-40000px;
+}
+
+.details-table .table{
+	margin-bottom:0px;
+}
+
+.blue-table th{
+	border-bottom: 1px solid #cccccc;
+	color: #525252 !important;
+	background-color:#e9faf9 !important;
+}
+
+.blue-table td{
+	border:none !important;
+	background-color:#e9faf9 !important;
 }
